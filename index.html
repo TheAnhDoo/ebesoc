@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XinChaoSoc</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-1/453731633_2437337746461231_4390589174227223670_n.jpg?stp=dst-jpg_s480x480&_nc_cat=107&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeG1SLG1zm9YMB6DhEz6Jso5i4QhSj-_OJGLhCFKP784kZtHSAWEDzB9wCsFvEBygmJbWEoLuFFmJ_tTvEoiKXlS&_nc_ohc=Y7HTjxrCV88Q7kNvgHlLhPq&_nc_ht=scontent.fhan15-2.fna&oh=00_AYBEONCbbLbwny8y-HlzFkvBQfJ7oEnu_npbgkHexdvMGQ&oe=66BC8BD5">
+</head>
+<body>
+   
+    <div class="container mx-auto">
+       
+        <h1 class="text-2xl" id="init">Hey Sóc👋, Can I Ask You Something?</h1>
+        <button onclick="startQuestions()" id="que">Sure, Ask Away!</button>
+
+        <div id="questions" style="display: none;">
+            <h1 class="text-2xl mt-8">Question 1:</h1>
+            <p>Do you believe in love at first sight?</p>
+            <button onclick="answerYes()">Yes</button>
+            <button onclick="answerNo()" class="no">No</button>
+        </div>
+
+        <div id="message" style="display: none;">
+            <p id="messageTextPart1"></p>
+            <p id="messageTextPart2"></p>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
